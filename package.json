@@ -23,14 +23,16 @@
     "npm": ">= 1.0.0"
   },
   "dependencies": {
+    "alexa-traffic-rank": "^1.0.1",
     "body-parser": "^1.15.0",
     "express": "~3.4.4",
     "google-search": "0.0.3",
-    "google-trends-api": "^1.2.3",
+    "google-trends-api": ">=1.2.3",
     "googleapis": "^4.0.0",
     "jsonfile": "^2.2.3",
     "mongoose": "^4.4.10",
     "multer": "^1.1.0",
+    "node-cron": "^1.2.0",
     "node-monkey": "^0.2.16",
     "node-schedule": "^1.1.0"
   },

@@ -9,8 +9,8 @@ Connection URL: mongodb://$OPENSHIFT_MONGODB_DB_HOST:$OPENSHIFT_MONGODB_DB_PORT/
 */
 //var searchTopics = [{"search_topics_1":"finance%20planning"},{"search_topics_2":"financial%20goals"},{"search_topics_3":"time%20and%20value%20of%20money"},{"search_topics_4":"career%20choice"},{"search_topics_5":"employment%20search"},{"search_topics_6":"employee%20benefits"},{"search_topics_7":"career%20development"},{"search_topics_8":"money%20management"},{"search_topics_9":"financial%20record%20system"},{"search_topics_10":"personal%20financial%20statements"},{"search_topics_11":"budgeting"},{"search_topics_12":"taxes"},{"search_topics_13":"savings"},{"search_topics_14":"payment%20methods"},{"search_topics_15":"consumer%20credit"},{"search_topics_16":"types%20of%20credit"},{"search_topics_17":"credit%20capacity"},{"search_topics_18":"applying%20for%20credit"},{"search_topics_19":"interest%20rates"},{"search_topics_20":"debit%20history"},{"search_topics_21":"credit%20scores"},{"search_topics_22":"bankrupcy"},{"search_topics_23":"credit%20counselling"},{"search_topics_24":"major%20purchases"},{"search_topics_25":"consumer%20rights"},{"search_topics_26":"auto%20loans"},{"search_topics_27":"tital%20loans"},{"search_topics_28":"revolving%20loans"},{"search_topics_29":"open%20ended%20loans"},{"search_topics_30":"close%20ended%20loans"},{"search_topics_31":"debit%20collection"},{"search_topics_32":"chapter%2011%20bankrupcy"},{"search_topics_33":"housing"},{"search_topics_34":"renting"},{"search_topics_35":"home%20buying"},{"search_topics_36":"property%20insurance"},{"search_topics_37":"home%20selling"},{"search_topics_38":"mortgages"},{"search_topics_39":"liability%20insurance"},{"search_topics_40":"home%20owners%20insurance"},{"search_topics_41":"renters%20insurance"},{"search_topics_42":"private%20insurance%20company"},{"search_topics_43":"medical%20service%20plans"},{"search_topics_44":"health%20maintenance%20organizations"},{"search_topics_45":"property%20providers"},{"search_topics_46":"bpo's"},{"search_topics_47":"home%20healthcare"},{"search_topics_48":"health%20plans"},{"search_topics_49":"medicare"},{"search_topics_50":"medicaid"},{"search_topics_51":"disability%20insurance"},{"search_topics_52":"long%20term%20feasibility%20insurance"},{"search_topics_53":"short%20term%20insurance"},{"search_topics_54":"term%20life%20insurance"},{"search_topics_55":"whole%20life%20insurance"},{"search_topics_56":"insurance%20beneficiaries"},{"search_topics_57":"insurance%20companies"},{"search_topics_58":"annuities"},{"search_topics_59":"investments"},{"search_topics_60":"investment%20goals"},{"search_topics_61":"investment%20strategies"},{"search_topics_62":"investment%20income"},{"search_topics_63":"investment%20growth"},{"search_topics_64":"investment%20equity"},{"search_topics_65":"investment%20risks"},{"search_topics_66":"investment%20alternatives"},{"search_topics_67":"modern%20markets"},{"search_topics_68":"capital%20markets"},{"search_topics_69":"asset%20location"},{"search_topics_70":"stocks"},{"search_topics_71":"mutual%20funds"},{"search_topics_72":"real%20estate"},{"search_topics_73":"real%20estate%20investment%20trusts"},{"search_topics_74":"reits"},{"search_topics_75":"common%20stock"},{"search_topics_76":"preferred%20stock"},{"search_topics_77":"corporate%20bonds"},{"search_topics_78":"government%20bonds"},{"search_topics_79":"municipal%20bonds"},{"search_topics_80":"convertible%20bonds"},{"search_topics_81":"exchange%20traded%20funds"},{"search_topics_82":"precious%20metals"},{"search_topics_83":"collectibles"},{"search_topics_84":"gold"},{"search_topics_85":"retirement"},{"search_topics_86":"retirement%20planning"},{"search_topics_87":"retirement%20housing"},{"search_topics_88":"retirement%20income"},{"search_topics_89":"retirement%20living%20expenses"},{"search_topics_90":"social%20security"},{"search_topics_91":"pensions"},{"search_topics_92":"public%20pensions"},{"search_topics_93":"employer%20pensions"},{"search_topics_94":"personal%20retirement%20plans"},{"search_topics_95":"individual%20retirement%20accounts"},{"search_topics_96":"roth%20individual%20retirement%20accounts"},{"search_topics_97":"401%20A"},{"search_topics_98":"401%20B"},{"search_topics_99":"retirement%20employement"},{"search_topics_100":"state%20planning"},{"search_topics_101":"wills"},{"search_topics_102":"power%20of%20attorney"},{"search_topics_103":"letter%20of%20lest%20instruction"},{"search_topics_104":"trusts"},{"search_topics_105":"trustees"},{"search_topics_106":"estate"},{"search_topics_107":"probabte"},{"search_topics_108":"state%20taxes"},{"search_topics_109":"custody"},{"search_topics_110":"child%20custody"},{"search_topics_111":"financial%20advisors"},{"search_topics_112":"taxes%20prepares"},{"search_topics_113":"tax%20advisors"},{"search_topics_114":"bankers"},{"search_topics_115":"financial%20planners"},{"search_topics_116":"financial%20analysts"},{"search_topics_117":"lawyers"},{"search_topics_118":"real%20estate%20brokers"},{"search_topics_119":"stock%20brokers"},{"search_topics_120":"investment%20bankers"},{"search_topics_121":"payday%20loans"},{"search_topics_122":"mortgage%20insurance"},{"search_topics_123":"auto%20insurance"},{"search_topics_124":"bodiliy%20injury%20insurance"},{"search_topics_125":"health%20insurance"},{"search_topics_126":"medical%20insurance"},{"search_topics_127":"private%20insurance%20companies"},{"search_topics_128":"diversification"},{"search_topics_129":"private%20insurance%20companies"},{"search_topics_130":"diversification"}];
 
-
 var searchTopics = [ {"search_topics_1":"Financial%20Planning"}, {"search_topics_2":"Career%20Planning"}, {"search_topics_3":"Financial%20Planners"}, {"search_topics_4":"Financial%20Goals"}, {"search_topics_5":"Time%20Value%20of%20Money"}, {"search_topics_6":"Money%20Management"}, {"search_topics_7":"Financial%20Record%20System"}, {"search_topics_8":"Personal%20Financial%20Statements"}, {"search_topics_9":"Budgeting"}, {"search_topics_10":"Savings"}, {"search_topics_11":"Payment%20Methods"}, {"search_topics_12":"Bank%20Currency"}, {"search_topics_13":"Insurance%20Companies"}, {"search_topics_14":"Private%20Insurance%20Companies"}, {"search_topics_15":"Financial%20Advisors"},{"search_topics_16":"Career%20Choice"}, {"search_topics_17":"Employment%20Search"}, {"search_topics_18":"Employee%20Benefits"}, {"search_topics_19":"Career%20Development"}, {"search_topics_20":"Taxes"}, {"search_topics_21":"Tax%20Refunds"}, {"search_topics_22":"Tax%20Advance%20Loans"}, {"search_topics_23":"Federal%20Income%20Taxes"}, {"search_topics_24":"Tax%20Deductions"}, {"search_topics_25":"Tax%20Credits"}, {"search_topics_26":"Tax%20Planning"}, {"search_topics_27":"Tax%20Preparers"}, {"search_topics_28":"Tax%20Advisors"}, {"search_topics_29":"Major%20Purchases"}, {"search_topics_30":"Bankers"}, {"search_topics_31":"Consumer%20Credit"}, {"search_topics_32":"Types%20of%20Credit"}, {"search_topics_33":"Revolving%20Loans"}, {"search_topics_34":"Open%20Ended%20Loans"}, {"search_topics_35":"Close%20Ended%20Loans"}, {"search_topics_36":"Revolving%20Loans"}, {"search_topics_37":"Credit%20Capacity"}, {"search_topics_38":"Debt%20History"}, {"search_topics_39":"Applying%20for%20Credit"}, {"search_topics_40":"Interest%20Rates"}, {"search_topics_41":"Credit%20History"}, {"search_topics_42":"Credit%20Scores"}, {"search_topics_43":"Credit%20Counseling"}, {"search_topics_44":"Consumer%20Rights"}, {"search_topics_45":"Predatory%20Lending%20Practices%20"}, {"search_topics_46":"Bank%20Corruption"}, {"search_topics_47":"Title%20Loans"}, {"search_topics_48":"Debt%20Collection"}, {"search_topics_49":"Bankruptcy"}, {"search_topics_50":"Chapter%2011%20Bankruptcy"}, {"search_topics_51":"Pawn%20Shops"}, {"search_topics_52":"Tax%20Advance%20Loans"}, {"search_topics_53":"Payday%20Loans"}, {"search_topics_54":"Rent%20to%20Own"}, {"search_topics_55":"Tax%20Refund%20Anticipation%20Loans"}, {"search_topics_56":"Real%20Estate%20Brokers"}, {"search_topics_57":"Housing"}, {"search_topics_58":"Home%20Buying"}, {"search_topics_59":"Property%20Providers"}, {"search_topics_60":"Brokers%20Price%20Opinio%20BPO"}, {"search_topics_61":"Mortgages"}, {"search_topics_62":"Renting"}, {"search_topics_63":"Homeowners%20Insurance"}, {"search_topics_64":"Property%20Insurance"}, {"search_topics_65":"Mortgage%20Insurance"}, {"search_topics_66":"Renters%20Insurance"}, {"search_topics_67":"Car%20Shopping"}, {"search_topics_68":"Auto%20Loans"}, {"search_topics_69":"Home%20Selling"}, {"search_topics_70":"Liability%20Insurance"}, {"search_topics_71":"Auto%20Insurance"}, {"search_topics_72":"Health%20Plans"}, {"search_topics_73":"Home%20Health%20Care"}, {"search_topics_74":"Health%20Maintenance%20Organizations%20HMOs"}, {"search_topics_75":"Preferred%20Provider%20Organization%20PPOs"}, {"search_topics_76":"Medical%20Service%20Plans"}, {"search_topics_77":"Health%20Insurance"}, {"search_topics_78":"Medical%20Insurance"}, {"search_topics_79":"Medicare"}, {"search_topics_80":"Medicaid"}, {"search_topics_81":"Bodily%20Injury%20Insurance"}, {"search_topics_82":"Short%20Term%20Disability%20Insurance%20"}, {"search_topics_83":"Long%20Term%20Disability%20Insurance%20"}, {"search_topics_84":"Whole%20Life%20Insurance"}, {"search_topics_85":"Turned%20Life%20Insurance"}, {"search_topics_86":"Short%20Term%20Insurance"}, {"search_topics_87":"Term%20Life%20Insurance"}, {"search_topics_88":"Annuities"}, {"search_topics_89":"Insurance%20Beneficiaries%20"}, {"search_topics_90":"Child%20Custody"}, {"search_topics_91":"Custody"}, {"search_topics_92":"Investments"}, {"search_topics_93":"Investment%20Goals"}, {"search_topics_94":"Investment%20Strategies"}, {"search_topics_95":"Investment%20Income"}, {"search_topics_96":"Investment%20Growth"}, {"search_topics_97":"Investment%20Equity"}, {"search_topics_98":"Investment%20Risks"}, {"search_topics_99":"Investment%20Alternatives"}, {"search_topics_100":"Asset%20Allocation"}, {"search_topics_101":"Diversification"}, {"search_topics_102":"Modern%20Markets"}, {"search_topics_103":"Capital%20Markets"}, {"search_topics_104":"Stocks"}, {"search_topics_105":"Mutual%20Funds"}, {"search_topics_106":"Real%20Estate"}, {"search_topics_107":"Real%20Estate%20Investment%20Trusts%20REITs"}, {"search_topics_108":"Common%20Stock"}, {"search_topics_109":"Preferred%20Stock"}, {"search_topics_110":"Corporate%20Bonds"}, {"search_topics_111":"Government%20Bonds"}, {"search_topics_112":"Municipal%20Bonds"}, {"search_topics_113":"Convertible%20Bonds"}, {"search_topics_114":"Exchange%20Traded%20Funds"}, {"search_topics_115":"Index%20Funds"}, {"search_topics_116":"Precious%20Metals"}, {"search_topics_117":"Collectibles"}, {"search_topics_118":"Gold"}, {"search_topics_119":"Stock%20Brokers"}, {"search_topics_120":"Investment%20Bankers"}, {"search_topics_121":"Financial%20Analysts"}, {"search_topics_122":"Retirement"}, {"search_topics_123":"Retirement%20Planning"}, {"search_topics_124":"Retirement%20Housing"}, {"search_topics_125":"Retirement%20Income"}, {"search_topics_126":"Retirement%20Living%20Expenses"}, {"search_topics_127":"Social%20Security"}, {"search_topics_128":"Pensions"}, {"search_topics_129":"Public%20Pensions"}, {"search_topics_130":"Employer%20Pensions"}, {"search_topics_131":"Personal%20Retirement%20Plans"}, {"search_topics_132":"Individual%20Retirement%20Accounts"}, {"search_topics_133":"Roth%20Individual%20Retirement%20Accounts"}, {"search_topics_134":"401%20A"}, {"search_topics_135":"401%20B"}, {"search_topics_136":"401%20K"}, {"search_topics_137":"403%20B"}, {"search_topics_138":"457"}, {"search_topics_139":"Thrift%20Savings%20Plan%20TSP"}, {"search_topics_140":"Retirement%20Employment"}, {"search_topics_141":"Wills"}, {"search_topics_142":"Power%20of%20Attorney"}, {"search_topics_143":"Letter%20of%20Lest%20Instruction"}, {"search_topics_144":"Trusts"}, {"search_topics_145":"Trustees"}, {"search_topics_146":"Estate"}, {"search_topics_147":"Probate"}, {"search_topics_148":"Lawyers"},{"search_topics_149":"debit%20collection"},{"search_topics_150" : "home%20owners%20insurance"},{"search_topics_151" : "estate%20planning"},{"search_topics_152" : "credit%20card"},{"search_topics_153" : "Personal%20Financial%20Planning"},{"search_topics_154" : "Credit%20and%20Loans"},{"search_topics_155" : "Your%20Health%20and%20Life"},{"search_topics_156" : "Investing"},{"search_topics_157" : "Planning%20for%20Retirement%20"},{"search_topics_158":"Wills"}, {"search_topics_159":"Power%20of%20Attorney"}, {"search_topics_160":"Letter%20of%20Lest%20Instruction"}];
+// var searchTopics = [ {"search_topics_1":"Financial%20Planning"}, {"search_topics_2":"Career%20Planning"}, {"search_topics_3":"Financial%20Planners"}, {"search_topics_4":"Financial%20Goals"}, {"search_topics_5":"Time%20Value%20of%20Money"}];
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
@@ -22,6 +22,7 @@ var mongoose = require('mongoose');
 var fs = require('fs');
 
 var googleTrends = require('google-trends-api');
+var alexaData = require('alexa-traffic-rank');
 
 app.use(bodyParser.json()); //for parsing app 
 app.use(bodyParser.urlencoded({extended:true})); // for parsing th eapp
@@ -30,7 +31,7 @@ app.use(multer()); //for parsing multipart
 app.use(express.static(__dirname + '/public'));
 var connectionString = process.env.OPENSHIFT_MONGODB_DB_URL || 'mongodb://localhost/test';
 mongoose.connect(connectionString); //connects to local DB
-
+console.log(connectionString);
 
 /*** Construct Schema for website - Start ***/
 var WebsiteSchema = new mongoose.Schema({
@@ -290,18 +291,30 @@ var cronJob = function(){
 	rule.hour = 16;
 	rule.minute = 30;
 	var j = schedule.scheduleJob(rule, function(){
-	   console.log('start');
+	   console.log('start Algo trail');
 	   algoTrial();
+
 	});
 	
 }
 cronJob();
+
+var schedule = require('node-schedule');
+var l = schedule.scheduleJob('2 * * * *',function(){
+	console.log("Log for every 2 min")
+});
+
+var cron = require('node-cron');
+cron.schedule('1 * * * *',function(){
+	console.log("runnig evryr 1 min")
+});
+
 var GoogleSearch = require('google-search');
 var customsearch = google.customsearch('v1');
 
-const CX =  '013944438288227651400:j_0h0-dl6um'; //'009350078174429104185:0ikpzx1qvau'; //'009350078174429104185:ipchhljo5xm';   // search engine ID
-//const API_KEY = 'AIzaSyAWZQCb6PFB1Oq1ZqUR6oJLhgwiTlgIKeY';
-const API_KEY = 'AIzaSyD_65dKKxS7Ah2-PEJGYq0UnGJj3eMME8Y';
+// const CX =  '013944438288227651400:j_0h0-dl6um'; //'009350078174429104185:0ikpzx1qvau'; //'009350078174429104185:ipchhljo5xm';   // search engine ID
+// //const API_KEY = 'AIzaSyAWZQCb6PFB1Oq1ZqUR6oJLhgwiTlgIKeY';
+// const API_KEY = 'AIzaSyD_65dKKxS7Ah2-PEJGYq0UnGJj3eMME8Y';
 
 //browser key
 var searchObj = [
@@ -468,8 +481,9 @@ var searchSample = function(searchKeyword,res){
 /* dataIndex = new searchIndex({"searchIndex" : 1});
 dataIndex.save(); */
 var searchsortedTopics = [];
+//fetchComponentApi fetch result from url into searchsortedTopics
 var fetchComponentApi = function(options,searchQueryData){
-	console.log("in");
+	console.log("in fetchComponentApi");
 	http = require('http');
 	var searchFinalRes = [];
 	var req = http.get( options.host, function(response) {
@@ -478,9 +492,10 @@ var fetchComponentApi = function(options,searchQueryData){
             str += d;
         });
         response.on('end', function() {
-			//console.log(str);
+			console.log(str);
 			var resObj = JSON.parse(str.substr(62).slice(0,-2).replace(/new/gi, '"new').replace(/\)/gi,')"'));
-			//res.json(resObj);
+            console.log("resObj");
+            console.log(resObj);
 			
 			/* searchFinalRes = searchFinalRes.concat(searchSortTopics(resObj,searchQueryData)).sort(function(a, b) {
 				return parseFloat(b.v) - parseFloat(a.v);
@@ -494,6 +509,8 @@ var fetchComponentApi = function(options,searchQueryData){
 		console.error( 'error', e );
     })
 }
+//searchSortTopics Sort result object and return array of obj with attribute f,index
+//USAGE: fetchComponentApi
 var searchSortTopics = function(resObj,searchQueryData){
 	var len = resObj.table.rows.length;
 	var result = resObj.table.rows[len-1].c;
@@ -514,6 +531,7 @@ var searchSortTopics = function(resObj,searchQueryData){
 	return(result);
 	
 }
+//Make Google Api Request for every 6 minutes on 5 till all topics are covered
 var searchDataFetchComponent = function(loopVar){
 	console.log("inside search data fetch component");
 	var flagLoopVar = 1;
@@ -551,6 +569,7 @@ var searchDataFetchComponent = function(loopVar){
 
 //searchDataFetchComponent(121);
 
+//searchData
 var searchData = function(loopVar){
 	var index = 0;
 	var searchDataArr = [];
@@ -641,10 +660,18 @@ var searchData = function(loopVar){
 //searchData();
 /* dataIndex = new searchIndex({"searchIndex" : 1});
 dataIndex.save(); */
-	
+
+
+//
 var artResult = [],count=0;
+//
 finalData = {};
+//
 finalD = [];
+
+
+
+
 var queryData = [],queryName = "";
 
 finalres = [];
@@ -662,9 +689,14 @@ var algoTrial = function(){
 		//res.json("algooooooooo trialllllllllllllllllllll");
 		var myVar  = setInterval(function () {
 			if(loopVar >= 161){
+                fs.writeFile('./trends.json', JSON.stringify(finalres), 'utf-8', function(err) {
+                    if (err) throw err
+                    console.log('Trends File Done!')
+                })
 				if(algoTrialFlag == 0){
 					algoTrialFlag=1;
 					clearInterval(myVar);
+					console.log("finalRes:" + finalres);
 					finalres.sort(function(a, b) {
 						return parseFloat(b.v) - parseFloat(a.v);
 					});
@@ -682,8 +714,12 @@ var algoTrial = function(){
 				queryData = [];
 				for(var i = loopVar;i < (loopVar < 161 ? loopVar+5 : loopVar+2);i++){
 					//query += fileData[i-1]["search_topics_" + i];
-					query += searchTopics[i-1]["search_topics_" + i];
+					searchstr = searchTopics[i-1]["search_topics_" + i];
+					console.log(searchstr);
+					query += searchstr;
+                    console.log("query 1 - "+ query)
 					query += (i!=(loopVar < 161 ? loopVar+4 : loopVar+1) ? "," : "");
+                    console.log("query 2 - "+ query)
 					
 					//queryData.push(fileData[i-1]["search_topics_" + i]);
 					queryData.push({index : i , name : searchTopics[i-1]["search_topics_" + i]});
@@ -693,30 +729,36 @@ var algoTrial = function(){
 				
 				path1 = '/trends/fetchComponent?hl=en-US&q='+query+'&cid=TIMESERIES_GRAPH_0&export=3&w=500&h=300';
 				options = {
-					host: 'http://www.google.com/trends/fetchComponent?hl=en-US&q='+query+'&cid=TIMESERIES_GRAPH_0&export=3&w=500&h=300',
+					host: 'http://trends.google.com/trends/fetchComponent?hl=en-US&q='+query+'&cid=TIMESERIES_GRAPH_0&export=3&w=500&h=300',
 					path: ""+path1
 				};
 			
-				api(options);
+				// api_v1(options);
+                api_v2(query);
 			}
-		}, 360000); //6minutes
+		}, 10000); //1minutes
 	}
 }
 //algoTrial();
-var api = function(options){
+//VERSION 1
+var api_v1 = function(options){
 	console.log("in api function");
 	http = require('http');
+    console.log(encodeURI(options.host))
+    console.log(encodeURIComponent(options.host))
 	var req = http.get( options.host, function(response) {
 		var str = '';
         response.on('data', function(d) {
             str += d;
         });
         response.on('end', function() {
+        	console.log(str);
 			//console.log(str.substr(62).slice(0,-2).replace(/new/gi, '"new').replace(/\)/gi,')"').replace(/^[, ]+|[, ]+$|[, ]+/g, ","));
 			var resObj = JSON.parse(str.substr(62).slice(0,-2).replace(/new/gi, '"new').replace(/\)/gi,')"').replace(/^[, ]+|[, ]+$|[, ]+/g, ","));
 			//res.json(resObj);
-			//console.log(str);
-			finalres = finalres.concat(sortTopics(resObj)).sort(function(a, b) {
+            console.log("resObj");
+			console.log(resObj);
+			finalres = finalres.concat(sortTopics_v1(resObj)).sort(function(a, b) {
 				return parseFloat(b.v) - parseFloat(a.v);
 			});
 			console.log("finl res")
@@ -727,11 +769,11 @@ var api = function(options){
     })
 }
 
-var sortTopics = function(resObj){
+var sortTopics_v1 = function(resObj){
 	var len = resObj.table.rows.length;
 	var result = resObj.table.rows[len-1].c;
+	console.log("result")
 	console.log(result)
-	console.log(result[1])
 	if(result.length < 5){
 		console.log("iffffffffffffffffffffff");
 		result = resObj.table.rows[len-2].c;
@@ -745,6 +787,7 @@ var sortTopics = function(resObj){
 	console.log("inside sort topics ---- result");
 	console.log(result);
 	for(var obj in result){
+		console.log(obj)
 		result[obj].f = queryData[count]["name"]; //topic name
 		result[obj].index = queryData[count]["index"]; //index of the topic in the main array that is hardcoded
 		//result[obj].v = queryData[count]["index"];
@@ -760,39 +803,69 @@ var sortTopics = function(resObj){
 	return(result);
 	
 }
+
+//VERSION 2
+var api_v2 = function(query){
+	//convert query into keyword array
+	keyword_arr = [];
+    console.log(query);
+    keyword_arr = query.split(",");
+    for(var i in keyword_arr)
+	{
+        console.log(keyword_arr[i])
+        keyword_arr[i] = keyword_arr[i].replace(/%20/g, " ");
+        console.log(keyword_arr[i])
+	}
+    console.log(keyword_arr);
+    googleTrends.interestOverTime({keyword: keyword_arr,  startTime: new Date(Date.now() - (24 * 60 * 60 * 1000)) })
+	.then((resObj) => {
+		console.log('this is res', resObj);
+
+		finalres = finalres.concat(sortTopics_v2(JSON.parse(resObj))).sort(function(a, b) {
+			return parseFloat(b.v) - parseFloat(a.v);
+		});
+		console.log(finalres);
+	})
+	.catch((err) => {
+		console.log('got the error', err);
+	})
+}
+
+var sortTopics_v2 = function(resObj){
+    console.log("sort_topic v2");
+    console.log(resObj);
+    var len = resObj.default.averages.length;
+    // console.log(len);
+    var res = resObj.default.averages;
+    console.log(result);
+    var result = []
+    var count = 0;
+    var obj = {};
+    for(var i in res){
+        console.log(i);
+        result.push({f: queryData[count]["name"], index: queryData[count]["index"], v: res[i]});
+        count++;
+    }
+	console.log("before sort");
+    result.sort(function(a, b) {
+        return parseFloat(a.v) - parseFloat(b.v);
+    });
+    console.log("result = ");
+    console.log(result);
+    return(result);
+}
+
+
 var x = "";
 var getGlobalRank = function(intrres,i){
-	x = 0;
-	/* if(res.substr(0, 4) == "www.") 
-      res =  res.substr(4); */
-    intrres = intrres.split(".");
-	var res = intrres[intrres.length-2] + "." + intrres[intrres.length-1];
-	console.log(res);
-	//var url = "https://www.similarweb.com/website/" + res;
-	var url = "http://www.alexa.com/siteinfo/"+ res;
-	//http = require('https');
-	http = require('http');
-	var req = http.get(url, function(response) {
-		var str = '';
-        response.on('data', function(d) {
-            str += d;
-        });
-        response.on('end', function() {
-			/* var n = str.search("GlobalRank\":");
-			var z = str.substr(n+13,n+8+12);
-			x = z.substr(0,z.indexOf(",")); */
-			//console.log(str);
-			var n = str.search("Alexa web traffic metrics are available via our API at http://aws.amazon.com/awis");
-			var z = str.substr(n+86,10).replace(/\s/g, '');
-			console.log("trialFinalD[i].globalRank = " + z + " length=" + z.length);
-			
-			trialFinalD[i].globalRank = z.replace(/,/g, '');
-			console.log("trialFinalD[i].globalRank = " + trialFinalD[i].globalRank);
-        });
-	}).on('error', function( e ) {
-		console.log(e);
+	console.log(intrres);
+    // var res = intrres[intrres.length-2] + "." + intrres[intrres.length-1];
+
+	//TODO: USE ranking restriction to avoid ads oriented website
+    alexaData.AlexaWebData(intrres, function(error, result) {
+        trialFinalD[i].globalRank = result.globalRank;
+        console.log("res:::"+intrres+" global ranking:::"+trialFinalD[i].globalRank);
     })
-	
 }
 //getGlobalRank();
 var getGlbrank = function(){
@@ -842,12 +915,18 @@ var setD = function(){
 		if(i < trialFinalD.length-1){
 			i++;
 			console.log("value of i = " + i);
+            console.log(trialFinalD[i].displayLink);
 			getGlobalRank(trialFinalD[i].displayLink,i);
 		} else{
 			clearInterval(myVar1);
 			calculateRank();
 			//response.json(trialFinalD);
-		}
+            fs.writeFile('./draftedresult.json', JSON.stringify(trialFinalD), 'utf-8', function(err) {
+                if (err) throw err
+                console.log('draftedresult File Done!')
+            })
+
+        }
 	},9000);
 }
 
@@ -898,6 +977,7 @@ var calculateRank = function(){
 	});
 	//(trialFinalD.length > 0 ? emptyDB() : "");
 	//console.log("DATABASE EMPTIEDDDDDDDDDDDDDDDDDDDD");
+
 	
 	ArticleFeaturedResult.find(function(err,data){
 		myData = data;
@@ -952,6 +1032,7 @@ var calculateRank = function(){
 				resp.save();
 			}
 		}
+		console.log("Time Taken for Algo ::"+(Date.now() - AlgoStartTime))
 	});
 }
 //calculateRank();
@@ -963,6 +1044,7 @@ var fetchArticlesSearchResults = function(topNine){
 		flag=1;
 		console.log("printing the values of v.........................")
 		for(var i =0;i<topNine.length;i++){
+			console.log("fetchArticlesSearchResults: "+ topNine[i].f)
 			searchTopics[i] = topNine[i].f.replace("%20", " ");
 			console.log(topNine[i].v);
 		}
@@ -983,25 +1065,28 @@ var fetchArticlesSearchResults = function(topNine){
 			topicRank : ""
 		};
 		//(arr.length > 0 ? emptyDB() : "");
+		var customjson = [];
 		var i=0;
 		var k=-1;
 		var myVar  = setInterval(function () {
 			if(i<searchTopics.length){
 				query = searchTopics[i];
 				console.log(query);
-				customsearch.cse.list({ cx: CX, q: query, auth: API_KEY }, function(err, resp) {
+				customsearch.cse.list({ cx: CX, q: query, auth: API_KEY ,dateRestrict: "d1"}, function(err, resp) {
 					//res.json(resp);
 					finalData.push(resp);
 					if (err) {
 						console.log('An error occured', err);
 						return;
 					}
-					//console.log(resp);
+                    console.log("custom search");
+					console.log(resp);
+                    customjson.push(resp);
 					for(var k=0;k<resp.items.length;k++){
 						result = {
 							title : resp.items[k].title,//.substring(0,30) + "...",
 							iframeLink : resp.items[k].link,
-							date : (resp.items[k].pagemap && resp.items[k].pagemap.metatags && resp.items[k].pagemap.metatags[0]["article:modified_time"]) ? resp.items[k].pagemap.metatags[0]["article:modified_time"].substring(0,10) : "0000-00-00",
+							date : (resp.items[k].pagemap && resp.items[k].pagemap.metatags && resp.items[k].pagemap.metatags[0]["article:modified_time"]) ? resp.items[k].pagemap.metatags[0]["article:modified_time"].substring(0,10) : (resp.items[k].pagemap && resp.items[k].pagemap.metatags && resp.items[k].pagemap.metatags[0]["date"]) ? resp.items[k].pagemap.metatags[0]["date"] :"0000-00-00",
 							snippet : resp.items[k].snippet,//.substring(0,125) + "...",
 							imgUrl : (resp.items[k].pagemap ? (resp.items[k].pagemap.cse_image && resp.items[k].pagemap.cse_image[0].src ? resp.items[k].pagemap.cse_image[0].src : (resp.items[k].pagemap.cse_thumbnail && resp.items[k].pagemap.cse_thumbnail[0].src ? resp.items[k].pagemap.cse_thumbnail[0].src : "images/defaultImg/search_" + topNine[i].index + "/" + Math.ceil(Math.random()*5) + ".png")) : "images/defaultImg/search_" + topNine[i].index + "/" + Math.ceil(Math.random()*5) + ".png"),
 							displayLink : resp.items[k].displayLink ? resp.items[k].displayLink : "",
@@ -1016,6 +1101,11 @@ var fetchArticlesSearchResults = function(topNine){
 					i++;
 				}); 		
 			} else {
+                fs.writeFile('./customsearch.json', JSON.stringify(customjson), 'utf-8', function(err) {
+                    if (err) throw err
+                    console.log('customsearch File Done!')
+                })
+
 				clearInterval(myVar);
 				//res.json(finalData);
 				setD();
@@ -1023,6 +1113,18 @@ var fetchArticlesSearchResults = function(topNine){
 		}, 9000);
 	}
 }
+//Possible date attributes
+// article:modified
+// article:published
+// dc.date.issued
+// dat
+// displaydate
+// pdate
+// ptime
+// utime
+// parsely-pub-date
+// sailthru.date
+// validatedat
 //fetchArticlesSearchResults();
 
 var setData = function(){
@@ -1060,7 +1162,9 @@ var setLoadMore = function(){
 	}
 }
 /**************************/
-
+// var AlgoStartTime = Date.now();
+// algoTrial();
+// console.log(searchTopics[4]["search_topics_5"]);
 var ip = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 var port = process.env.OPENSHIFT_NODEJS_PORT || 3000;
 app.listen(port,ip);
