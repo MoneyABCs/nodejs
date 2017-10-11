@@ -29,9 +29,33 @@ app.use(bodyParser.urlencoded({extended:true})); // for parsing th eapp
 app.use(multer()); //for parsing multipart
 
 app.use(express.static(__dirname + '/public'));
-var connectionString = process.env.OPENSHIFT_MONGODB_DB_URL || 'mongodb://localhost/test';
-mongoose.connect(connectionString); //connects to local DB
-console.log(connectionString);
+
+var mongoURL = process.env.OPENSHIFT_MONGODB_DB_URL || process.env.MONGO_URL ;
+//|| 'mongodb://localhost/test'
+var mongoURLLabel = ""
+
+if (mongoURL == null && process.env.DATABASE_SERVICE_NAME) {
+    var mongoServiceName = process.env.DATABASE_SERVICE_NAME.toUpperCase(),
+        mongoHost = process.env[mongoServiceName + '_SERVICE_HOST'],
+        mongoPort = process.env[mongoServiceName + '_SERVICE_PORT'],
+        mongoDatabase = process.env[mongoServiceName + '_DATABASE'],
+        mongoPassword = process.env[mongoServiceName + '_PASSWORD']
+    mongoUser = process.env[mongoServiceName + '_USER'];
+
+    if (mongoHost && mongoPort && mongoDatabase) {
+        mongoURLLabel = mongoURL = 'mongodb://';
+        if (mongoUser && mongoPassword) {
+            mongoURL += mongoUser + ':' + mongoPassword + '@';
+        }
+        // Provide UI label that excludes user id and pw
+        mongoURLLabel += mongoHost + ':' + mongoPort + '/' + mongoDatabase;
+        mongoURL += mongoHost + ':' +  mongoPort + '/' + mongoDatabase;
+
+    }
+}
+
+mongoose.connect(mongoURL); //connects to local DB
+console.log(mongoURL);
 
 /*** Construct Schema for website - Start ***/
 var WebsiteSchema = new mongoose.Schema({
