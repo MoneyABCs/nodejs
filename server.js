@@ -1189,8 +1189,10 @@ var setLoadMore = function(){
 // var AlgoStartTime = Date.now();
 // algoTrial();
 // console.log(searchTopics[4]["search_topics_5"]);
-var ip = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
-var port = process.env.OPENSHIFT_NODEJS_PORT || 3000;
+var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
+    ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',
+// var ip = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+// var port = process.env.OPENSHIFT_NODEJS_PORT || 3000;
 app.listen(port,ip);
-require('node-monkey').start({host: ip, port:3003});
+// require('node-monkey').start({host: ip, port:3003});
 console.log("works !!!!!!!!!!!!!!!!!");
